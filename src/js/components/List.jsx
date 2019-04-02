@@ -27,13 +27,13 @@ class ConnectedList extends Component {
     super();
     this.state = [];
   }
-  componentDidMount() {
-    debugger;
-    console.log("props", this.props);
-    this.setState({ articles: this.props.articles }, () =>
-      console.log("didMount", this.state.articles)
-    );
-  }
+  // componentDidMount() {
+  //   debugger;
+  //   console.log("props", this.props);
+  //   this.setState({ articles: this.props.articles }, () =>
+  //     console.log("didMount", this.state.articles)
+  //   );
+  // }
   componentDidUpdate() {
     console.log("updated");
   }

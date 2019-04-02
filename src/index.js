@@ -5,8 +5,10 @@ import store from "./js/store/index";
 import App from "./js/components/App";
 import { loadState, saveState } from "./js/localStorage";
 import rootReducer from "./js/reducers/index";
+import { createStore } from "redux";
 
 //const persistedState = loadState();
+
 // store.subscribe(() => {
 //   debugger;
 //   saveState({ rootReducer: store.getState(), rootReducer });
