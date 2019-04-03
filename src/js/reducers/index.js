@@ -5,13 +5,11 @@ const initialState = {
 };
 
 function rootReducer(state = initialState, action) {
-  debugger;
   switch (action.type) {
     case ADD_ARTICLE:
       return Object.assign({}, state, {
         articles: state.articles.concat(action.payload)
       });
-    //return { articles: action.payload };
     case DELETE_ARTICLE:
       return { articles: action.payload };
     default:
@@ -20,21 +18,3 @@ function rootReducer(state = initialState, action) {
 }
 
 export default rootReducer;
-
-// function rootReducer(state = initialState, action) {
-//     debugger;
-//     console.log(state);
-//     console.log(action.payload);
-//     if (action.type === ADD_ARTICLE) {
-//       return Object.assign({}, state, {
-//         articles: state.articles.concat(action.payload)
-//       });
-//     }
-//     //   if (action.type === DELETE_ARTICLE) {
-//     //     return Object.assign({}, state, {
-//     //       articles: state.articles.concat(action.payload)
-//     //     });
-//     //   }
-//     return state;
-//   }
-// export default rootReducer;
